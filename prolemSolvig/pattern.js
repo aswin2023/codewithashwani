@@ -158,3 +158,26 @@ function pyramidReversePattern(number) {
     }
 }
 pyramidReversePattern(5);
+
+function pyramidHollowPattern(number) {
+    for (let i = 1; i <= number; i++) {
+        let aswin = '';
+        for (let j = 1; j <= 2 * number - 1; j++) {
+            if (j >= number - i + 1 && j <= number + i - 1) {
+                if (j === number - i + 1 || j === number + i - 1 || i === number) {
+                    /*
+                    j=5,4,6,3,7,2,8,1,2,3,4,5,6,7,8,9
+                    i=1,2,2,3,3,4,4,5,5,5,5,5,5,5,5,5
+                     */
+                    aswin += '*';
+                } else {
+                    aswin += ' ';
+                }
+            } else {
+                aswin += ' ';
+            }
+        }
+        console.log(aswin);
+    }
+}
+pyramidHollowPattern(5);
