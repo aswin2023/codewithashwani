@@ -1,0 +1,56 @@
+squareStarPatter 
+// 1. Square Star Pattern in Javascript=done
+/* 
+*****
+*****
+*****
+*****
+*****
+*/
+
+hollowSquarePattern
+// 2. Hollow Square Pattern =done
+/*
+*****
+*   *
+*   *
+*   *
+*****
+*/
+triangleRightPattern
+// 3. Right Triangle Pattern in Javascript=done
+/*
+    *
+   **
+  ***
+ ****
+*****
+*/
+
+// 4. Left Triangle Pattern in Javascript =done
+/*
+*
+**
+***
+****
+*****
+*/
+
+//5. Downward Triangle Star Pattern
+/*
+*****
+****
+***
+**
+*
+*/
+
+//6. Hollow Triangle Star Pattern
+/*
+*
+**
+* *
+*  *
+*   *
+******
+*/

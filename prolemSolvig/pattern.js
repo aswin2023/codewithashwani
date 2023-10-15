@@ -44,7 +44,7 @@ function triangleRightPattern(number) {
                 i=1,2,2,3,3,3,4,4,4,4,5,5,5,5,5
                 j=5,4,5,3,4,5,2,3,4,5,1,2,3,4,5
                 */
-                aswin += j;
+                aswin += '*';
             }
         }
         console.log(aswin);
@@ -66,3 +66,23 @@ function triangleLefttPattern(number) {
     }
 }
 triangleLefttPattern(5)
+
+function triangleHollowRightPattern(number) {
+    for (i = 1; i <= number; i++) {
+        let aswin = '';
+        for (j = 1; j <= number; j++) {
+            if (j === 1 || j === i || i === number) {
+                /*
+                i=1,2,2,3,3,4,4,5,5,5,5,5
+                j=1,1,2,1,3,1,4,1,2,3,4,5
+                */
+                aswin += '*'
+
+            } else {
+                aswin += ' '
+            }
+        }
+        console.log(aswin)
+    }
+}
+triangleHollowRightPattern(5);
