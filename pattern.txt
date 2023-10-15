@@ -35,8 +35,8 @@ triangleRightPattern
 ****
 *****
 */
-
-//5. Downward Triangle Star Pattern
+triangleLeftDownwardPattern
+//5. Downward Triangle Star Pattern done
 /*
 *****
 ****
@@ -45,7 +45,7 @@ triangleRightPattern
 *
 */
 
-//6. Hollow Triangle Star Pattern
+//6. Hollow Triangle Star Pattern =done
 /*
 *
 **

@@ -67,6 +67,21 @@ function triangleLefttPattern(number) {
 }
 triangleLefttPattern(5)
 
+function triangleLeftDownwardPattern(number) {
+    for (let i = number; i >= 1; i--) {
+        let stars = "";
+        for (let j = 1; j <= i; j++) {
+            /*
+            i=5,5,5,5,5,4,4,4,4,3,3,3,2,2,1
+            j=1,2,3,4,5,1,2,3,4,1,2,3,1,2,1
+            */
+            stars += "*"
+        }
+        console.log(stars)
+    }
+}
+triangleLeftDownwardPattern(5)
+
 function triangleHollowRightPattern(number) {
     for (i = 1; i <= number; i++) {
         let aswin = '';
