@@ -52,6 +52,25 @@ function triangleRightPattern(number) {
 }
 triangleRightPattern(5);
 
+function triangleRightDownwardPattern(number) {
+    for (let i = number; i >=1; i--) {
+        let aswin = '';
+        for (let j = 1; j <= number; j++) {
+            if (j <= number - i) {
+                aswin += ' ';
+            } else {
+                /*
+                i=1,2,2,3,3,3,4,4,4,4,5,5,5,5,5
+                j=5,4,5,3,4,5,2,3,4,5,1,2,3,4,5
+                */
+                aswin += '*';
+            }
+        }
+        console.log(aswin);
+    }
+}
+triangleRightDownwardPattern(5);
+
 function triangleLefttPattern(number) {
     for (let i = 1; i <= number; i++) {
         let stars = "";
