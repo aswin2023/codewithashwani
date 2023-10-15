@@ -159,6 +159,41 @@ function pyramidReversePattern(number) {
 }
 pyramidReversePattern(5);
 
+function pyramidHourglassPattern(number) {
+    for (let i = number; i >= 1; i--) {
+        let aswin = '';
+        for (let j = 1; j <= number * 2 - 1; j++) {
+            if (j >= number - i + 1 && j <= number + i - 1) {
+                /*
+                j=1,2,3,4,5,6,7,8,9,2,3,4,5,6,7,8,3,4,5,6,7,4,5,6,5
+                i=5,5,5,5,5,5,5,5,5,4,4,4,4,4,4,4,3,3,3,3,3,2,2,2,1
+                */
+                aswin += '*';
+            } else {
+                aswin += ' ';
+            }
+        }
+        console.log(aswin);
+    }
+
+    for (let i = 2; i <= number; i++) {
+        let aswin = '';
+        for (let j = 1; j <= number * 2 - 1; j++) {
+            if (j >= number - i + 1 && j <= number + i - 1) {
+                /*
+                j=5,4,5,6,3,4,5,6,7,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,9
+                i=1,2,2,2,3,3,3,3,3,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5
+                */
+                aswin += '*';
+            } else {
+                aswin += ' ';
+            }
+        }
+        console.log(aswin);
+    }
+}
+pyramidHourglassPattern(5);
+
 function pyramidDiamondPattern(number){
     for (let i = 1; i <= number; i++) {
         let aswin = '';
