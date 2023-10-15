@@ -120,3 +120,22 @@ function triangleHollowRightPattern(number) {
     }
 }
 triangleHollowRightPattern(5);
+
+function pyramidPattern(number) {
+    for (let i = 1; i <= number; i++) {
+        let aswin = '';
+        for (let j = 1; j <= number * 2 - 1; j++) {
+            if (j >= number - i + 1 && j <= number + i - 1) {
+                /*
+                j=5,4,5,6,3,4,5,6,7,2,3,4,5,6,7,8,1,2,3,4,5,6,7,8,9
+                i=1,2,2,2,3,3,3,3,3,4,4,4,4,4,4,4,5,5,5,5,5,5,5,5,5
+                */
+                aswin += '*';
+            } else {
+                aswin += ' ';
+            }
+        }
+        console.log(aswin);
+    }
+}
+pyramidPattern(5);
