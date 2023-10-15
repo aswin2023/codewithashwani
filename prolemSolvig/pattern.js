@@ -294,3 +294,30 @@ function pyramidHollowDiamondPattern(number) {
     }
 }
 pyramidHollowDiamondPattern(5);
+
+function rightPascalPattern(number) {
+    for (let i = 1; i <= number; i++) {
+        let stars = "";
+        for (let j = 1; j <= i; j++) {
+            /*
+            i=1,2,2,3,3,3,4,4,4,4,5,5,5,5,5
+            j=1,1,2,1,2,3,1,2,3,4,1,2,3,4,5
+            */
+            stars += "*"
+        }
+        console.log(stars)
+    }
+
+    for (let i = number - 1; i >= 1; i--) {
+        let stars = "";
+        for (let j = 1; j <= i; j++) {
+            /*
+            i=5,5,5,5,5,4,4,4,4,3,3,3,2,2,1
+            j=1,2,3,4,5,1,2,3,4,1,2,3,1,2,1
+            */
+            stars += "*"
+        }
+        console.log(stars)
+    }
+}
+rightPascalPattern(5)
