@@ -473,3 +473,24 @@ pascalLeftPattern(5);
 
 // ==========================character =========================
 
+function characterAPattern(number){
+
+}
+characterAPattern(5)
+
+
+//====================Alphabet Pattern======================
+/*
+A                           
+B B                         
+C C C                           
+D D D D                         
+E E E E E    
+
+or
+1
+22
+333
+4444
+55555
+*/
