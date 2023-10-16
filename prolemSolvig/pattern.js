@@ -8,10 +8,17 @@ function squareStarPatter(number) {
             j=1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5,1,2,3,4,5          
             */
         }
-        console.log('*')
+        console.log(stars)
     }
 }
 squareStarPatter(5)
+/* output ::
+*****
+*****
+*****
+*****
+*****
+*/
 
 function hollowSquarePattern(number) {
     for (i = 1; i <= number; i++) {
@@ -32,7 +39,13 @@ function hollowSquarePattern(number) {
     }
 }
 hollowSquarePattern(5)
-
+/* output::
+*****
+*   *
+*   *
+*   *
+*****
+*/
 function triangleRightPattern(number) {
     for (let i = 1; i <= number; i++) {
         let aswin = '';
@@ -51,7 +64,13 @@ function triangleRightPattern(number) {
     }
 }
 triangleRightPattern(5);
-
+/* output::
+    *
+   **
+  ***
+ ****
+*****
+*/
 function triangleRightDownwardPattern(number) {
     for (let i = number; i >=1; i--) {
         let aswin = '';
@@ -70,7 +89,13 @@ function triangleRightDownwardPattern(number) {
     }
 }
 triangleRightDownwardPattern(5);
-
+/* output::
+*****
+ ****
+  ***
+   **
+    *
+*/
 function triangleLefttPattern(number) {
     for (let i = 1; i <= number; i++) {
         let stars = "";
@@ -85,7 +110,13 @@ function triangleLefttPattern(number) {
     }
 }
 triangleLefttPattern(5)
-
+/* output::
+*
+**
+***
+****
+*****
+*/
 function triangleLeftDownwardPattern(number) {
     for (let i = number; i >= 1; i--) {
         let stars = "";
@@ -100,7 +131,13 @@ function triangleLeftDownwardPattern(number) {
     }
 }
 triangleLeftDownwardPattern(5)
-
+/* output::
+*****
+****
+***
+**
+*
+*/
 function triangleHollowRightPattern(number) {
     for (i = 1; i <= number; i++) {
         let aswin = '';
@@ -120,7 +157,13 @@ function triangleHollowRightPattern(number) {
     }
 }
 triangleHollowRightPattern(5);
-
+/* output::
+*    
+**   
+* *
+*  *
+*****
+*/
 function pyramidPattern(number) {
     for (let i = 1; i <= number; i++) {
         let aswin = '';
@@ -139,7 +182,13 @@ function pyramidPattern(number) {
     }
 }
 pyramidPattern(5);
-
+/* output::
+    *    
+   ***   
+  *****
+ *******
+*********
+*/
 function pyramidReversePattern(number) {
     for (let i = number; i >=1; i--) {
         let aswin = '';
@@ -158,7 +207,13 @@ function pyramidReversePattern(number) {
     }
 }
 pyramidReversePattern(5);
-
+/* output::
+*********
+ ******* 
+  *****
+   ***
+    *
+*/
 function pyramidHourglassPattern(number) {
     for (let i = number; i >= 1; i--) {
         let aswin = '';
@@ -193,7 +248,17 @@ function pyramidHourglassPattern(number) {
     }
 }
 pyramidHourglassPattern(5);
-
+/* output::
+*********
+ ******* 
+  *****
+   ***
+    *
+   ***
+  *****
+ *******
+*********
+*/
 function pyramidDiamondPattern(number){
     for (let i = 1; i <= number; i++) {
         let aswin = '';
@@ -228,7 +293,18 @@ function pyramidDiamondPattern(number){
     }
 }
 pyramidDiamondPattern(5)
-
+/* output::
+    *    
+   ***   
+  *****
+ *******
+*********
+*********
+ *******
+  *****
+   ***
+    *
+*/
 function pyramidHollowPattern(number) {
     for (let i = 1; i <= number; i++) {
         let aswin = '';
@@ -251,7 +327,13 @@ function pyramidHollowPattern(number) {
     }
 }
 pyramidHollowPattern(5);
-
+/* output::
+    *    
+   * *   
+  *   *
+ *     *
+*********
+*/
 function pyramidHollowDiamondPattern(number) {
     for (let i = 1; i <= number; i++) {
         let aswin = '';
@@ -294,7 +376,18 @@ function pyramidHollowDiamondPattern(number) {
     }
 }
 pyramidHollowDiamondPattern(5);
-
+/* output::
+    *    
+   * *   
+  *   *
+ *     *
+*       *
+*       *
+ *     *
+  *   *
+   * *
+    *
+*/
 function pascalRightPattern(number) {
     for (let i = 1; i <= number; i++) {
         let stars = "";
@@ -321,7 +414,17 @@ function pascalRightPattern(number) {
     }
 }
 pascalRightPattern(5)
-
+/* output::
+*
+**
+***
+****
+*****
+****
+***
+**
+*
+*/
 function pascalLeftPattern(number) {
     for (let i = 1; i <= number; i++) {
         let aswin = '';
@@ -356,3 +459,14 @@ function pascalLeftPattern(number) {
     }
 }
 pascalLeftPattern(5);
+/* output::
+    *
+   **
+  ***
+ ****
+*****
+ ****
+  ***
+   **
+    *
+*/
